@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  font-size: 22px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  
+}
+
+.wrapper {
+  display: flex;
+  border-top: .5rem solid #73808D;
+  padding: 2rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  filter: drop-shadow(0px 2px 4px rgba(16, 18, 20, 0.08));
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.profile-info h1 {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile-info h2  {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+main {
+  padding-right: 2rem;
+}
+
+section h2 {
+  font-size: .6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: #a9a9a9;
+  margin-bottom: .5rem;
+}
+
+article h3 {
+  font-size: 1.1rem;
+}
+
+article h4 {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+article > span {
+  color: #a9a9a9;
+  font-size: .7rem;
+  line-height: 1.5;
+}
+
+article > p {
+  font-size: .9rem;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+
+aside {
+  color: #73808D;
+  min-width: 300px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside h3,
+aside ul li {
+  line-height: 1.6;
+  font-size: .9rem;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
